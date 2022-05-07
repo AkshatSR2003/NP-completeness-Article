@@ -28,6 +28,7 @@ The name "NP-complete" is short for "nondeterministic polynomial-time complete".
  Polynomial time refers to an amount of time that is considered "quick" for a deterministic algorithm to check a single solution, or for a nondeterministic Turing machine to perform the whole search. "Complete" refers to the property of being able to simulate everything in the same complexity class.
 
 A problem is in the class NPC if it is in NP and is as hard as any problem in NP. A problem is NP-hard if all problems in NP are polynomial time reducible to it, even though it may not be in NP itself.
+![image](https://user-images.githubusercontent.com/105116829/167259989-0babd312-5b24-44d7-a7cf-d385814aee62.png)
 
  
 If a polynomial time algorithm exists for any of these problems, all problems in NP would be polynomial time solvable. These problems are called NP-complete. The phenomenon of NP-completeness is important for both theoretical and practical reasons.
@@ -43,7 +44,8 @@ NP-complete problems are the hardest problems in the NP set.  A decision problem
 2) Every problem in NP is reducible to L in polynomial time (Reduction is defined below). 
 
 A problem is NP-Hard if it follows property 2 mentioned above, doesn’t need to follow property 1. Therefore, the NP-Complete set is also a subset of the NP-Hard set. 
- 
+ ![image](https://user-images.githubusercontent.com/105116829/167260013-e3cb0161-e4d5-4adb-87d2-f3a3c06008a5.png)
+
 
 The problem in NP-Hard cannot be solved in polynomial time, until P = NP. If a problem is proved to be NPC, there is no need to waste time on trying to find an efficient algorithm for it. Instead, we can focus on design approximation algorithm.
 A problem X is NP-Complete if there is an NP problem Y, such that Y is reducible to X in polynomial time. NP-Complete problems are as hard as NP problems. A problem is NP-Complete if it is a part of both NP and NP-Hard Problem. A non- deterministic  turning machine can solve NP-Complete problem in polynomial time. 
@@ -60,7 +62,8 @@ Let L1 and L2 be two decision problems. Suppose algorithm A2 solves L2. That is,
 
 The idea is to find a transformation from L1 to L2 so that algorithm A2 can be part of an algorithm A1 to solve L1. 
 
- 
+ ![image](https://user-images.githubusercontent.com/105116829/167260026-8a07669d-6a96-4ed9-ac2b-5d1cd53d8ab1.png)
+
 Learning reduction, in general, is very important. For example, if we have library functions to solve certain problems and if we can reduce a new problem to one of the solved problems, we save a lot of time. Consider the example of a problem where we have to find the minimum product path in a given directed graph where the product of path is the multiplication of weights of edges along the path. If we have code for Dijkstra’s algorithm to find the shortest path, we can take the log of all weights and use Dijkstra’s algorithm to find the minimum product path rather than writing a fresh code for this new problem. 
 
 	How to prove that a given problem is NP complete? 
@@ -76,6 +79,7 @@ It is always useful to know about NP-Completeness even for engineers. Suppose yo
 	NP Complete Problems
 
 To prove whether particular problem is NP complete or not we use polynomial time reductibility.The reduction is an important task in NP completeness proofs . this can be illustrated by the following figure
+![image](https://user-images.githubusercontent.com/105116829/167260043-3eb567ce-8b86-49a8-91fc-d17f69b32921.png)
 
  
 Various types of reduction are 
